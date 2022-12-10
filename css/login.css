@@ -1,0 +1,100 @@
+legend{
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip-path: calc(0,0,0,0);
+} 
+button,a{
+    padding:0;
+    border:0;
+    background-color: inherit;
+    text-decoration: none;
+    color:black;
+}
+body{  
+    text-align: center;
+}
+fieldset{
+    border:0;
+}
+main{
+    top: 100px;
+    background-color: white;
+    width: 500px;
+    height: 600px;
+    display: inline-block;
+    position: relative;
+}
+header .logo{
+    font-weight: 800;
+    
+}
+header button{
+    top:-50px;
+    left: 0;
+    background-color: white;
+    padding:5px;
+    width: 5rem;
+    border-radius: 15px;
+    border: gray 1px solid;
+    position: absolute;   
+}
+header::after{
+    margin-top:30px;
+    content: "";
+    display: block;
+    border-top:2px whitesmoke solid;
+}
+visual{
+    text-align: left;
+}
+visual p{
+    margin:0;
+}
+.kakao{
+    margin:30px 0 30px 0;
+    width: 100%;
+}
+.kakao a{
+    
+    font-weight: 800;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background-color: #FEE500;   
+    border-radius: 5px;
+}
+.login-item{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.login-item button{
+    
+    background-color: #FEE500;
+}
+.login-item a{
+    padding: 10px 0 10px 0;
+    display: block;
+    margin:-11px;
+    width: 240px;
+    border: black solid 1px;
+    background-color: white;
+    border-radius: 5px 0 0 5px;
+}
+
+.login-item a:nth-child(0){
+    font-size: 100px;
+}
+.user-email input,.user-pw input{
+    width: 450px;
+    padding:15px;
+    border: gray 1px solid;
+}
+.user-email input{
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;;
+}
+.user-pw input{
+    border-radius: 0 0 5px 5px;;
+}

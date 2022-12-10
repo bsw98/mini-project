@@ -5,6 +5,7 @@
     list-style: none;
 }
 
+/* 할인 혜택 광고  */
 .ad a{
     display: inline-block;
     z-index:2;
@@ -18,9 +19,7 @@
     left:0;
     top:0;
 }
-
-
-
+/* 로고 및 쿠앤크 영역 */
 header{
     
    
@@ -34,34 +33,53 @@ header a{
     font-size: 24px;
 }
 header img{
-    max-width:320px;
+    max-width:400px;
 }
-
-.main img{
-    max-width: 800px;
+/* 메인 */
+.main{
+    display: block;
+    margin: 0 auto;
+    text-align : center;
     width: 100%;
-    height: auto;
+    max-width: 1500px;
+    
 }
-.article{
-    margin: auto;
-    height: auto;
-    max-width: 800px;
+.main img{
+    max-width: 1200px;
+    width: 100%;
+    margin: 10px;
+}
+.main-best{
+     width:100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.main-best ul{
+    margin:0 auto;
+    max-width: 1200px;
     display: flex;
-    flex-wrap: wrap;   
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+.main-best img{
+    width:inherit;
+    max-width: 360px;
 }
 .cloths{
-    display:block;
+    font-size: 12px;
 }
-.article img{
-    max-width: 240px;
-    width: 100%;
-    height: auto;
+.cloths-price p{
+    margin: 0;
+    font-size:12px;
+    font-weight: 800;
 }
-.main,.footer{  
-    margin: 0 auto;
-    text-align: center;   
+.cloths::after{
+ content:"";   
+ display: block;
+ border-top :1px gray solid;
+ margin: 10px 5%;
 }
+/* 사이드 메뉴 */
 li{
     font-size: 12px;
 }
@@ -77,11 +95,9 @@ li{
     position: fixed;
     font-size: 80px;
     top: 229px;
-    right: 20px;
-    
-    
+    right: 20px;   
 }
-@media(max-width:1000px){
+@media(max-width:1200px){
     .header,.main,.footer{
         position: relative;
         left:200px;

@@ -1,171 +1,24 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-           
-            background-color: aqua;
-        }
-        .a11y-hidden{
-            clip-path:polygon();
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-        }
-        .menu{
-            width: 800px;
-            height: 800px;;
-            padding-left: 300px;;
-            padding-top : 20px;
-            border:2px solid black;
-            list-style: none;
-            display: flex;
-        }
-       
-        .menu-button{
-            position: relative;
-            border:2px solid black;
-            margin: 0 px;
-           
-            background: transparent;
-        }
-        .menu-button:hover,.menu-button:focus{
-            color:red;      
-        }
-        .sub-menu{
-            display: flex;
-            position: absolute;
-            margin-top: 20px;
-            left:0;
-        }
-        .sub-menu li{
-        display: none;
-        }
-        .is-active li{       
-            
-           display: block;
-           white-space: nowrap;
-            
-         border:2px solid black;  
-            
-        }
-        a{
-
-            text-decoration: none;
-            color:black;
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header{
+      background-color: red;
+      display: inline-block;
+      
+      line-height: 500px;
+      
+    }
+  </style>
 </head>
 <body>
-    <nav class="navigation">
-        <h2 class="a11y-hidden">메인 메뉴</h2>
-       <ul class="menu">
-         <li class="menu-item is-active">
-           <button type="button" class="menu-button">HTML에 대해</button>
-           <ul class="sub-menu menu-html">
-             <li>
-               <a href="/">HTML5 소개</a>
-             </li>
-             <li>
-               <a href="/">레퍼런스 소개</a>
-             </li>
-             <li>
-               <a href="/">활용예제</a>
-             </li>
-           </ul>
-         </li>
-         <li class="menu-item">
-           <button type="button" class="menu-button">CSS에 대해</button>
-           <ul class="sub-menu menu-css">
-             <li>
-               <a href="/">CSS 소개</a>
-             </li>
-             <li>
-               <a href="/">CSS2 VS CSS3</a>
-             </li>
-             <li>
-               <a href="/">CSS 애니메이션</a>
-             </li>
-             <li>
-               <a href="/">CSS Framework</a>
-             </li>
-           </ul>
-         </li>
-         <li class="menu-item">
-           <button type="button" class="menu-button">웹표준</button>
-           <ul class="sub-menu menu-standards">
-             <li>
-               <a href="/">웹표준 이란?</a>
-             </li>
-             <li>
-               <a href="/">W3C</a>
-             </li>
-             <li>
-               <a href="/">HTML5의 현재와 미래</a>
-             </li>
-           </ul>
-         </li>
-         <li class="menu-item">
-           <button type="button" class="menu-button">웹 접근성</button>
-           <ul class="sub-menu menu-accessibility">
-             <li>
-               <a href="/">웹 접근성의 개요</a>
-             </li>
-             <li>
-               <a href="/">장애 환경의 이해</a>
-             </li>
-             <li>
-               <a href="/">장차법</a>
-             </li>
-             <li>
-               <a href="/">웹 접근성 품질마크</a>
-             </li>
-           </ul>
-         </li>
-         <li class="menu-item">
-           <button type="button" class="menu-button">묻고 답하기</button>
-           <ul class="sub-menu menu-qna">
-             <li>
-               <a href="/">묻고 답하기</a>
-             </li>
-             <li>
-               <a href="/">FAQ</a>
-             </li>
-             <li>
-               <a href="/">1대1 질문</a>
-             </li>
-             <li>
-               <a href="/">웹표준</a>
-             </li>
-             <li>
-               <a href="/">웹 접근성</a>
-             </li>
-           </ul>
-         </li>
-         <li class="menu-item">
-           <button type="button" class="menu-button">자료실</button>
-           <ul class="sub-menu menu-archive">
-             <li>
-               <a href="/">공개 자료실</a>
-             </li>
-             <li>
-               <a href="/">이미지 자료실</a>
-             </li>
-             <li>
-               <a href="/">웹표준 자료실</a>
-             </li>
-             <li>
-               <a href="/">웹 접근성 자료실</a>
-             </li>
-           </ul>
-         </li>
-       </ul>
-     </nav>
+  <header>
+    dddd<br>
+    dddd
+  </header>
 </body>
 </html>
