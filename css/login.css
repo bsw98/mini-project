@@ -5,7 +5,7 @@ legend{
     height: 1px;
     clip-path: calc(0,0,0,0);
 } 
-button,a{
+a{
     padding:0;
     border:0;
     background-color: inherit;
@@ -97,4 +97,32 @@ visual p{
 }
 .user-pw input{
     border-radius: 0 0 5px 5px;;
+}
+.login-button{
+    margin:20px 0 10px 0;
+    border-radius: 10px;
+    background-color: rgb(39, 37, 37);
+    color: aliceblue;
+    padding:15px;
+    font-weight: 800;
+    width: 100%;
+}
+.sub{
+    display: flow-root;
+}
+.sub a{
+    font-size: 12px;
+    float:left;   
+}
+.sub a:first-child::after{
+    content:"ㅣ"
+}
+.sub a:nth-child(3){
+    float:right;
+}
+.sub::after{
+    margin: 60px 0 30px 0;
+    content: "";
+    display: block;
+    border-top:black 2px solid;
 }
