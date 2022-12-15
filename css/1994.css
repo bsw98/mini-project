@@ -54,22 +54,15 @@ header img{
   margin: 0 auto;
 }
 .main-best ul{
-   display: flex;  
-    flex-flow: wrap row;        
-    justify-content: space-evenly;
+
+    display: inline;
 }
-.main-best li{
-    
-    display: inline-block;
+.main-best li{   
     padding: 5px;
 }
-.best-contents-wrapper1{
+.best-contents-wrapper1,.best-contents-wrapper2{
     display: flex;
-    
-}
-.best-contents-wrapper2{
-    display: flex;
-    
+   
 }
 .main-best li img{
 
