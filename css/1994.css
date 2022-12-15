@@ -1,10 +1,9 @@
 *{
-    
+    box-sizing: border-box;
     text-decoration: none;
     color:black;
     list-style: none;
 }
-
 /* 할인 혜택 광고  */
 .ad a{
     display: inline-block;
@@ -44,7 +43,7 @@ header img{
     max-width: 1500px;
     
 }
-.main img{
+.main-img img{
     max-width: 1200px;
     width: 100%;
     margin: 10px;
@@ -55,15 +54,32 @@ header img{
   margin: 0 auto;
 }
 .main-best ul{
-    margin:0 auto;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;   
+   display: flex;  
+    flex-flow: wrap row;        
+    justify-content: space-evenly;
 }
-.main-best img{
-    width:inherit;
-    max-width: 360px;
+.main-best li{
+    
+    display: inline-block;
+    padding: 5px;
+}
+.best-contents-wrapper1{
+    display: flex;
+    
+}
+.best-contents-wrapper2{
+    display: flex;
+    
+}
+.main-best li img{
+
+    width:100%;
+    height: auto;
+    
+}
+.main-best li img:hover{
+    box-shadow: gray 0 5px 5px;
+    box-shadow: gray 0 5px 5px;
 }
 .cloths{
     font-size: 12px;
@@ -97,9 +113,20 @@ li{
     top: 229px;
     right: 20px;   
 }
-@media(max-width:1200px){
+@media(min-width:1200px){
+    .main-best li{
+        padding: 10px;
+    }
+}
+@media(max-width:1200px)and (min-width:800px){
     .header,.main,.footer{
         position: relative;
         left:200px;
+    }
+}
+@media(max-width:799px){
+    .menu{
+        display: none;
+
     }
 }
