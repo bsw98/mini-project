@@ -13,8 +13,8 @@
     text-align: center;
     background-color: black;
     color: white;
+    height: 40px;
     padding: 10px;    
-    height: 20px;
     left:0;
     top:0;
 }
@@ -68,12 +68,15 @@ header img{
 
     width:100%;
     height: auto;
-    
+    transition: all 400ms;
 }
 .main-best li img:hover{
+    background-color: black;
+    opacity: 0.8;
     box-shadow: gray 0 5px 5px;
     box-shadow: gray 0 5px 5px;
 }
+
 .cloths{
     font-size: 12px;
 }
@@ -106,18 +109,34 @@ li{
     top: 229px;
     right: 20px;   
 }
-@media(min-width:1200px){
+#community::after{
+    margin: 40px 0;
+    display: block;
+    content:"";
+    border-top:1px solid rgb(201, 200, 200);
+}
+/* 푸터  */
+.footer{
+    background-color: antiquewhite;
+    text-align: center;
+}
+@media(min-width:1400px){
     .main-best li{
         padding: 10px;
     }
 }
-@media(max-width:1200px)and (min-width:800px){
+@media(max-width:1400px)and (min-width:800px){
     .header,.main,.footer{
         position: relative;
         left:200px;
     }
 }
 @media(max-width:799px){
+    .ad a{
+        font-size: 12px;
+        line-height: 12px;
+        height: 28px;    
+    }
     .menu{
         display: none;
 
