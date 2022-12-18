@@ -43,10 +43,14 @@ header img{
     max-width: 1500px;
     
 }
+.main h2{
+    margin-top: 100px;
+    font-size: 12px;
+}
 .main-img img{
     max-width: 1200px;
     width: 100%;
-    margin: 10px;
+    /* margin: 10px; */
 }
 .main-best{
      width:100%;
@@ -64,13 +68,13 @@ header img{
     display: flex;
    
 }
-.main-best li img{
+.main-best li img,.new img{
 
     width:100%;
     height: auto;
     transition: all 400ms;
 }
-.main-best li img:hover{
+.main-best li img:hover,.new img:hover{
     background-color: black;
     opacity: 0.8;
     box-shadow: gray 0 5px 5px;
@@ -88,27 +92,82 @@ header img{
 .cloths::after{
  content:"";   
  display: block;
- border-top :1px gray solid;
+ border-top :1px rgb(182, 181, 181) solid;
  margin: 10px 5%;
 }
-/* 사이드 메뉴 */
-li{
-    font-size: 12px;
+.new{
+    
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
 }
+.new li{
+    margin:50px 10px;
+    
+   display: block;
+    width: 300px;
+}
+/* 사이드 메뉴 */
+
 .left{
-    height: 800px;   
+   
+    font-size: 12px;
+    height: 100vh;   
     top:229px;
     float: left;
     position: fixed;
     
 }
+.left .etc{
+    position: relative;
+   left:40px;
+}
+.etc img{
+    margin-top:30px;
+}
 .right{
     float: right;
     position: fixed;
-    font-size: 80px;
+    font-size: 12px;
     top: 229px;
-    right: 20px;   
+    right: 20px;     
 }
+.right li:hover{
+    opacity: 0.5;
+}
+.right li{
+    margin:2px 0;
+    transition: opacity 400ms;
+}
+.right .event{
+    position: relative;
+    left:-60px;
+    top:-75px;
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    padding:2px;
+    font-size: 11px;
+    animation-name: moveEffect;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes moveEffect{
+    0%{
+        top:-75px;
+    }
+    50%{
+        top:-70px;
+    }
+    100%{
+    top:-75px
+
+    }
+    
+    }
 #community::after{
     margin: 40px 0;
     display: block;
@@ -117,21 +176,57 @@ li{
 }
 /* 푸터  */
 .footer{
-    background-color: antiquewhite;
+    margin:100px 0;
+    width:80%;
+    font-size: 12px;
     text-align: center;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-evenly;
+    text-align: left;
 }
 @media(min-width:1400px){
     .main-best li{
         padding: 10px;
     }
-}
+    .mobile-header{
+        display: none;
+    }
+
+}   
 @media(max-width:1400px)and (min-width:800px){
     .header,.main,.footer{
         position: relative;
         left:200px;
     }
+    .mobile-header{
+        display: none;
+    }
 }
 @media(max-width:799px){
+    .new li{
+        width: 200px;
+    
+    }
+    .footer{
+        width:100%;
+    }
+    .mobile-header{
+        position: fixed;
+        display: flex;
+        padding:10px;
+        z-index: 10;
+        width:100%;
+        background-color: white;
+        top:28px;
+        justify-content: space-between;
+    }
+    .mobile-home{
+        font-weight: 800;
+    }
+    .header{
+        display: none;
+    }
     .ad a{
         font-size: 12px;
         line-height: 12px;
@@ -140,5 +235,9 @@ li{
     .menu{
         display: none;
 
+    }
+    .main,.footer{
+        top:60px;
+        position: relative;
     }
 }
