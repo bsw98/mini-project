@@ -1,3 +1,6 @@
+@import url(./fontello.css);
+@import url(./fon);
+
 *{
     box-sizing: border-box;
     text-decoration: none;
@@ -186,6 +189,7 @@ header img{
     justify-content: space-evenly;
     text-align: left;
 }
+/* 데스크톱 */
 @media(min-width:1400px){
     .main-best li{
         padding: 10px;
@@ -204,26 +208,31 @@ header img{
         display: none;
     }
 }
+/* 모바일 */
 @media(max-width:799px){
+
     .new li{
-        width: 200px;
-    
+        margin:10px 0px;
+        width: 210px; 
     }
     .footer{
         width:100%;
     }
     .mobile-header{
+        font-size: 20px;
         position: fixed;
         display: flex;
         padding:10px;
         z-index: 10;
         width:100%;
+        opacity: 0.8;
         background-color: white;
         top:28px;
         justify-content: space-between;
     }
     .mobile-home{
-        font-weight: 800;
+        font-weight: 
+        800;
     }
     .header{
         display: none;
@@ -241,4 +250,21 @@ header img{
         top:60px;
         position: relative;
     }
+    .mobile-menu,.mobile-search{
+        cursor: pointer;
+        border:0;
+        background-color: inherit;
+    
+    }
+    .mobile-search::after{
+        font-family: "fontello";
+        content:"\e800";
+        font-size:20px;
+    }
+    .mobile-menu::after{
+        font-size:20px;
+        font-family: "fontello";
+        content:"\f0c9"
+    }
+    
 }
