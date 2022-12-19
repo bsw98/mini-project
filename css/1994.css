@@ -179,9 +179,11 @@ header img{
 }
 /* 푸터  */
 .footer{
+    position: relative;
+    left:200px;
     margin:100px 0;
     margin-bottom: 50px;
-    width:80%;
+    width:600px;
     font-size: 12px;
     text-align: center;
     display: flex;
@@ -212,11 +214,13 @@ header img{
 @media(max-width:799px){
 
     .new li{
-        margin:10px 0px;
-        width: 210px; 
+        margin:10px 2px;
+        width: 195px; 
     }
     .footer{
+       left:0;
         width:100%;
+      
     }
     .mobile-header{
         font-size: 20px;
@@ -250,12 +254,16 @@ header img{
         top:60px;
         position: relative;
     }
+    .mobile-menu{
+        
+    } 
     .mobile-menu,.mobile-search{
         cursor: pointer;
         border:0;
         background-color: inherit;
     
     }
+
     .mobile-search::after{
         font-family: "fontello";
         content:"\e800";
